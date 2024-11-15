@@ -182,7 +182,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 10. **Build and Run `gRPCServerCLI`**
 
     ```bash
-    bazel run Apps:gRPCServerCLI --keep_going --compilation_mode=opt
+    ./bazel run Apps:gRPCServerCLI --keep_going --compilation_mode=opt
     ```
 
     **Note**: The `--keep_going` flag allows the build to continue despite errors. If you encounter nvcc compilation issues with flash attention, retrying a few times may resolve them.
@@ -194,7 +194,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 - **Optimized Build**: For a release build, use the `--compilation_mode=opt` flag.
 
   ```bash
-  bazel build Apps:gRPCServerCLI --compilation_mode=opt
+  ./bazel build Apps:gRPCServerCLI --compilation_mode=opt
   ```
 
 - **Standalone Binary**: After building, you can copy the binary to any location and run it independently without additional dependencies.
