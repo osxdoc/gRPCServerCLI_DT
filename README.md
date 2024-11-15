@@ -102,7 +102,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
    ```bash
    sudo apt update
-   sudo apt install -y libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev
+   sudo apt install -y libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm-config
    ```
 
 3. **Install CUDA Toolkit**
