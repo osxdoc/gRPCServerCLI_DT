@@ -115,12 +115,12 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 5. **Install Bazelisk**
 
-   Download Bazelisk and place it in `/usr/local/bin/`:
+   Download Bazelisk and place it in `~/draw-things-community`:
 
    ```bash
    wget https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-linux-amd64 
    chmod +x bazelisk-linux-amd64
-   sudo cp bazelisk-linux-amd64 /usr/bin/bazel
+   mv bazelisk-linux-amd64 bazel
    ```
 
 6. **Set Up the Repository**
