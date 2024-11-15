@@ -129,13 +129,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    ./Scripts/install.sh
    ```
 
-7. **Specify Bazel Version**
-
-   ```bash
-   echo 6.3.2 > .bazelversion
-   ```
-
-8. **Configure Clang**
+7. **Configure Clang**
 
    ```bash
    ./Scripts/setup_clang.sh /usr
@@ -143,7 +137,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
    This command generates a `clang.bazelrc` file.
 
-9. **Create `.bazelrc.local` File**
+8. **Create `.bazelrc.local` File**
 
    In the root directory of the repository, create and edit the `.bazelrc.local` file:
 
@@ -181,7 +175,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    build --define=enable_sm80=true
    ```
 
-10. **Build and Run `gRPCServerCLI`**
+9. **Build and Run `gRPCServerCLI`**
 
     ```bash
     bazel run Apps:gRPCServerCLI --keep_going --compilation_mode=opt
