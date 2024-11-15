@@ -118,8 +118,9 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    Download Bazelisk and place it in `/usr/local/bin/`:
 
    ```bash
-   curl -Lo /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-linux-amd64
-   chmod +x /usr/local/bin/bazel
+   wget https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-linux-amd64 
+   chmod +x bazelisk-linux-amd64
+   sudo cp bazelisk-linux-amd64 /usr/bin/bazel
    ```
 
 6. **Set Up the Repository**
