@@ -138,7 +138,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 8. **Configure Clang**
 
    ```bash
-   ./Scripts/setup_clang.sh
+   ./Scripts/setup_clang.sh /usr
    ```
 
    This command generates a `clang.bazelrc` file.
