@@ -165,7 +165,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    This command generates a `clang.bazelrc` file.
 
 11. **Create `.bazelrc.local` File**
-    **Content** (Update CUDA and cuDNN versions if necessary):
+    (Update CUDA and cuDNN versions if necessary)
 
    In the root directory of the repository, create and edit the `.bazelrc.local` file:
 
