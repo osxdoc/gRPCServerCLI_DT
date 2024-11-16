@@ -136,8 +136,14 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 7. **Install Swift**
 
    Download and install from https://www.swift.org/download/
+   ```bash
+   wget https://download.swift.org/swift-6.0.2-release/ubuntu2004/swift-6.0.2-RELEASE/swift-6.0.2-RELEASE-ubuntu20.04.tar.gz
+   tar xzf swift-6.0.2-RELEASE-ubuntu20.04.tar.gz
+   export PATH=swift-6.0.2-RELEASE-ubuntu24.04/usr/bin:"${PATH}"
+   
+   
 
-8. **Install Bazelisk**
+9. **Install Bazelisk**
 
    Download Bazelisk and place it in `~/draw-things-community`:
 
@@ -147,13 +153,13 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    mv bazelisk-linux-amd64 bazel
    ```
 
-9. **Set Up the Repository**
+10. **Set Up the Repository**
 
    ```bash
    ./Scripts/install.sh
    ```
 
-10. **Specify Bazel Version**
+11. **Specify Bazel Version**
    ```bash
    echo 6.3.2 > .bazelversion
    ```
