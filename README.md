@@ -141,7 +141,11 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    ```bash
    wget https://download.swift.org/swift-6.0.2-release/ubuntu2004/swift-6.0.2-RELEASE/swift-6.0.2-RELEASE-ubuntu20.04.tar.gz
    tar xzf swift-6.0.2-RELEASE-ubuntu20.04.tar.gz
-   export PATH=swift-6.0.2-RELEASE-ubuntu24.04/usr/bin:"${PATH}"
+   sudo mv swift-6.0.2-RELEASE-ubuntu24.04 /usr/share/swift
+   
+   echo 'export PATH=/usr/share/swift/usr/bin:$PATH' >> ~/.bashrc
+   
+   export PATH=/usr/share/swift/usr/bin:"${PATH}"
    
    
 
