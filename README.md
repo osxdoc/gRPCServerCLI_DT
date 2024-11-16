@@ -91,19 +91,21 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 ### Installation Steps (Linux)
 
-1. **Clone the Repository**
+1. **Install System Dependencies**
+
+   ```bash
+   sudo apt update
+   sudo apt install -y git libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm
+   ```
+
+2. **Clone the Repository**
 
    ```bash
    git clone https://github.com/drawthingsai/draw-things-community.git
    cd draw-things-community
    ```
 
-2. **Install System Dependencies**
 
-   ```bash
-   sudo apt update
-   sudo apt install -y libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm
-   ```
 
 3. **Install CUDA Toolkit**
 
