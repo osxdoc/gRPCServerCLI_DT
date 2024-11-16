@@ -156,7 +156,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 10. **Set Up the Repository**
 
    ```bash
-   ./Scripts/install.sh /usr
+   ./Scripts/install.sh
    ```
 
 11. **Specify Bazel Version**
@@ -166,7 +166,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 11. **Configure Clang**
 
    ```bash
-   ./Scripts/setup_clang.sh /usr
+   ./Scripts/setup_clang.sh
    ```
 
    This command generates a `clang.bazelrc` file.
