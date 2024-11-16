@@ -95,7 +95,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
    ```bash
    sudo apt update
-   sudo apt install -y git libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm python3-swiftclient
+   sudo apt install -y git libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm 
    ```
 
 2. **Clone the Repository**
