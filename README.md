@@ -102,7 +102,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
    ```bash
    sudo apt update
-   sudo apt install -y libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm-config
+   sudo apt install -y libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm
    ```
 
 3. **Install CUDA Toolkit**
@@ -113,7 +113,11 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
    Download and install from [NVIDIA cuDNN Downloads](https://developer.nvidia.com/cudnn).
 
-5. **Install Bazelisk**
+5. **Install Swift**
+
+   Download and install from https://www.swift.org/download/
+
+6. **Install Bazelisk**
 
    Download Bazelisk and place it in `~/draw-things-community`:
 
@@ -123,17 +127,17 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    mv bazelisk-linux-amd64 bazel
    ```
 
-6. **Set Up the Repository**
+7. **Set Up the Repository**
 
    ```bash
    ./Scripts/install.sh
    ```
 
-7. **Specify Bazel Version**
+8. **Specify Bazel Version**
    ```bash
    echo 6.3.2 > .bazelversion
    ```
-8. **Configure Clang**
+9. **Configure Clang**
 
    ```bash
    ./Scripts/setup_clang.sh /usr
@@ -141,7 +145,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
    This command generates a `clang.bazelrc` file.
 
-9. **Create `.bazelrc.local` File**
+10. **Create `.bazelrc.local` File**
 
    In the root directory of the repository, create and edit the `.bazelrc.local` file:
 
@@ -179,7 +183,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    build --define=enable_sm80=true
    ```
 
-10. **Build and Run `gRPCServerCLI`**
+11. **Build and Run `gRPCServerCLI`**
 
     ```bash
     ./bazel run Apps:gRPCServerCLI --keep_going --compilation_mode=opt
