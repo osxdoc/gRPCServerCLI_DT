@@ -52,11 +52,11 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 2. **Install Bazelisk**
 
-   Download Bazelisk and place it in `/usr/local/bin/`:
+   Download Bazelisk:
 
    ```bash
-   curl -Lo /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-darwin-amd64
-   chmod +x /usr/local/bin/bazel
+   curl -Lo bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-darwin-amd64
+   chmod +x bazel
    ```
 
 3. **Set Up the Repository**
@@ -76,13 +76,13 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    Replace `[username]` with your macOS username:
 
    ```bash
-   bazel run Apps:gRPCServerCLI -- /Users/[username]/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
+   ./bazel run Apps:gRPCServerCLI -- /Users/[username]/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
    ```
 
    **Note**: To view available options, run:
 
    ```bash
-   bazel run Apps:gRPCServerCLI -- -h
+   ./bazel run Apps:gRPCServerCLI -- -h
    ```
 
 ---
