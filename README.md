@@ -119,11 +119,19 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
    Download and install from [NVIDIA cuDNN Downloads](https://developer.nvidia.com/cudnn).
 
-6. **Install Swift**
+   ```bash
+   wget https://developer.download.nvidia.com/compute/cudnn/9.5.1/local_installers/cudnn-local-repo-ubuntu2404-9.5.1_1.0-1_amd64.deb
+   sudo dpkg -i cudnn-local-repo-ubuntu2404-9.5.1_1.0-1_amd64.deb
+   sudo cp /var/cudnn-local-repo-ubuntu2404-9.5.1/cudnn-*-keyring.gpg /usr/share/keyrings/
+   sudo apt-get updatesudo apt-get -y install cudnn
+   ``bash
+
+
+7. **Install Swift**
 
    Download and install from https://www.swift.org/download/
 
-7. **Install Bazelisk**
+8. **Install Bazelisk**
 
    Download Bazelisk and place it in `~/draw-things-community`:
 
@@ -133,17 +141,17 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    mv bazelisk-linux-amd64 bazel
    ```
 
-8. **Set Up the Repository**
+9. **Set Up the Repository**
 
    ```bash
    ./Scripts/install.sh
    ```
 
-9. **Specify Bazel Version**
+10. **Specify Bazel Version**
    ```bash
    echo 6.3.2 > .bazelversion
    ```
-10. **Configure Clang**
+11. **Configure Clang**
 
    ```bash
    ./Scripts/setup_clang.sh /usr
