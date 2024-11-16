@@ -73,7 +73,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 5. **Run `gRPCServerCLI`**
 
-   Replace `[username]` with your macOS username:
+   Run gRPCServerCLI:
 
    ```bash
    ./bazel run Apps:gRPCServerCLI -- ~/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
