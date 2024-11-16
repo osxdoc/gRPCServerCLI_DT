@@ -165,6 +165,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    This command generates a `clang.bazelrc` file.
 
 11. **Create `.bazelrc.local` File**
+    **Content** (Update CUDA and cuDNN versions if necessary):
 
    In the root directory of the repository, create and edit the `.bazelrc.local` file:
 
@@ -200,34 +201,6 @@ EOF
    ```
 
    **Content** (Update CUDA and cuDNN versions if necessary):
-
-   ```bash
-   build --action_env TF_NEED_CUDA="1"
-   build --action_env TF_NEED_OPENCL="1"
-   build --action_env TF_CUDA_CLANG="0"
-   build --action_env HOST_CXX_COMPILER="/usr/bin/clang"
-   build --action_env HOST_C_COMPILER="/usr/bin/clang"
-   build --action_env CLANG_CUDA_COMPILER_PATH="/usr/bin/clang"
-   build --action_env GCC_HOST_COMPILER_PATH="/usr/bin/clang"
-
-   build --action_env CUDA_TOOLKIT_PATH="/usr/local/cuda"
-   build --action_env TF_CUDA_VERSION="12.4"
-   build --action_env TF_CUDA_COMPUTE_CAPABILITIES="8.0"
-   build --action_env COMPUTECPP_TOOLKIT_PATH="/usr/local/computecpp"
-   build --action_env TMP="/tmp"
-   build --action_env TF_CUDNN_VERSION="8"
-   build --action_env CUDNN_INSTALL_PATH="/usr"
-   build --action_env TF_NCCL_VERSION="2"
-   build --action_env NCCL_INSTALL_PATH="/usr"
-
-   build --config=clang
-   build --config=cuda
-
-   build --linkopt="-z nostart-stop-gc"
-   build --host_linkopt="-z nostart-stop-gc"
-
-   build --define=enable_sm80=true
-   ```
 
 11. **Build and Run `gRPCServerCLI`**
 
