@@ -156,7 +156,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 10. **Set Up the Repository**
 
    ```bash
-   ./Scripts/install.sh
+   ./Scripts/install.sh /usr
    ```
 
 11. **Specify Bazel Version**
