@@ -193,7 +193,7 @@ build --action_env CLANG_CUDA_COMPILER_PATH="/usr/bin/clang"
 build --action_env GCC_HOST_COMPILER_PATH="/usr/bin/clang"
 
 build --action_env CUDA_TOOLKIT_PATH="/usr/local/cuda"
-build --action_env TF_CUDA_VERSION="12.4"
+build --action_env TF_CUDA_VERSION="12.6"
 build --action_env TF_CUDA_COMPUTE_CAPABILITIES="8.0"
 build --action_env COMPUTECPP_TOOLKIT_PATH="/usr/local/computecpp"
 build --action_env TMP="/tmp"
