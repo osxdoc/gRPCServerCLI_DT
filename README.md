@@ -124,7 +124,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    sudo dpkg -i cudnn-local-repo-ubuntu2404-9.5.1_1.0-1_amd64.deb
    sudo cp /var/cudnn-local-repo-ubuntu2404-9.5.1/cudnn-*-keyring.gpg /usr/share/keyrings/
    sudo apt-get updatesudo apt-get -y install cudnn
-   ``bash
+   ``` 
 
 
 7. **Install Swift**
