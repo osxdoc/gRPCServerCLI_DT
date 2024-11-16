@@ -41,7 +41,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 ## Setting Up on macOS
 
-### Installation Steps (macOS)
+### NOT TESTED Installation Steps (macOS)
 
 1. **Clone the Repository**
 
@@ -89,7 +89,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 ## Setting Up on Linux
 
-### Installation Steps (Linux)
+### Installation Steps (Linux) Ubuntu 24.04.1 LTS
 
 1. **Install System Dependencies**
 
