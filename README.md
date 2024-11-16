@@ -116,7 +116,8 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    wget https://developer.download.nvidia.com/compute/cuda/12.6.2/local_installers/cuda-repo-ubuntu2404-12-6-local_12.6.2-560.35.03-1_amd64.deb
    sudo dpkg -i cuda-repo-ubuntu2404-12-6-local_12.6.2-560.35.03-1_amd64.deb
    sudo cp /var/cuda-repo-ubuntu2404-12-6-local/cuda-*-keyring.gpg /usr/share/keyrings/
-   sudo apt-get updatesudo apt-get -y install cuda-toolkit-12-6
+   sudo apt-get update
+   sudo apt-get -y install cuda-toolkit-12-6
    ```
 
 5. **Install cuDNN**
