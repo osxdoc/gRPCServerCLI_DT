@@ -76,7 +76,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    Run gRPCServerCLI:
 
    ```bash
-   ./bazel run Apps:gRPCServerCLI -- ~/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
+   ./bazel run Apps:gRPCServerCLI --compilation_mode=opt -- ~/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
    ```
 
    **Note**: To view available options, run:
