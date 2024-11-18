@@ -71,9 +71,6 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    echo 7.3.1 > .bazelversion
    ```
 
-Here’s a GitHub-friendly version with proper formatting for easy copy-paste:
-
-```markdown
 ## Run gRPCServerCLI
 
 To run the `gRPCServerCLI`, follow these steps:
