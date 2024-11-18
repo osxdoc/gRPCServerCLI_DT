@@ -71,19 +71,38 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    echo 7.3.1 > .bazelversion
    ```
 
-5. **Run `gRPCServerCLI`**
+Here’s a GitHub-friendly version with proper formatting for easy copy-paste:
 
-   Run gRPCServerCLI:
+```markdown
+## Run gRPCServerCLI
 
-   ```bash
-   ./bazel run Apps:gRPCServerCLI --compilation_mode=opt -- ~/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
-   ```
+To run the `gRPCServerCLI`, follow these steps:
 
-   **Note**: To view available options, run:
+### 1. Compile and Run with Bazel
+Use the following command to compile and run the `gRPCServerCLI` directly:
+```bash
+./bazel run Apps:gRPCServerCLI --compilation_mode=opt -- ~/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
+```
 
-   ```bash
-   ./bazel run Apps:gRPCServerCLI -- -h
-   ```
+### 2. View Available Options
+To see the available options and arguments, run:
+```bash
+./bazel run Apps:gRPCServerCLI -- -h
+```
+
+### 3. Copy the Compiled Binary
+After compilation, the `gRPCServerCLI` binary will be located in the `draw-things-community/bazel-bin/Apps` directory.  
+Copy it to a location of your choice using:
+```bash
+cp draw-things-community/bazel-bin/Apps/gRPCServerCLI /your/desired/path
+```
+
+### 4. Run the Application
+Navigate to the directory where you copied the binary and execute it:
+```bash
+./gRPCServerCLI ~/Library/Containers/com.liuliu.draw-things/Data/Documents/Models
+```
+```
 
 ---
 
