@@ -55,7 +55,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    Download Bazelisk:
 
    ```bash
-   curl -Lo bazel [https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-darwin-arm64]
+   curl -Lo bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-darwin-arm64
    chmod +x bazel
    ```
 
