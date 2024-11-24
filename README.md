@@ -101,6 +101,8 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 3. **Install CUDA Toolkit**  
    Install CUDA Toolkit 12.6 (ensure compatibility with your system):
+   "sudo apt install nvidia-cuda-toolkit"
+
    ```bash
    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
    sudo mv cuda-ubuntu2404.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -108,7 +110,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    sudo apt -y install cuda-toolkit-12-6
    ```
 
-4. **Install cuDNN**  
+5. **Install cuDNN**  
    Install cuDNN (ensure compatibility with your CUDA version):
    ```bash
    wget https://developer.download.nvidia.com/compute/cudnn/9.5.1/local_installers/cudnn-local-repo-ubuntu2404-9.5.1_1.0-1_amd64.deb
@@ -117,7 +119,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    sudo apt -y install cudnn
    ```
 
-5. **Install Swift**  
+6. **Install Swift**  
    Download and install Swift:
    ```bash
    wget https://download.swift.org/swift-6.0.2-release/ubuntu2004/swift-6.0.2-RELEASE/swift-6.0.2-RELEASE-ubuntu20.04.tar.gz
@@ -127,7 +129,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    source ~/.bashrc
    ```
 
-6. **Install Bazelisk**  
+7. **Install Bazelisk**  
    Download and set up Bazelisk:
    ```bash
    wget https://github.com/bazelbuild/bazelisk/releases/download/v1.23.0/bazelisk-linux-amd64
@@ -135,19 +137,19 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    mv bazelisk-linux-amd64 bazel
    ```
 
-7. **Set Up the Repository**  
+8. **Set Up the Repository**  
    Run the setup script:
    ```bash
    ./Scripts/install.sh
    ```
 
-8. **Specify Bazel Version**  
+9. **Specify Bazel Version**  
    Set the required Bazel version:
    ```bash
    echo 6.3.2 > .bazelversion
    ```
 
-9. **Configure Clang**  
+10. **Configure Clang**  
    Generate the `clang.bazelrc` file:
    ```bash
    ./Scripts/setup_clang.sh
