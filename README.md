@@ -105,10 +105,10 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    (???"sudo apt install nvidia-cuda-toolkit")
 
    ```bash
-   wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
-   sudo mv cuda-ubuntu2404.pin /etc/apt/preferences.d/cuda-repository-pin-600
-   sudo apt update
-   sudo apt -y install cuda-toolkit-12-6
+   wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
+   sudo dpkg -i cuda-keyring_1.1-1_all.deb
+   sudo apt-get update
+   sudo apt-get -y install cuda-toolkit-12-6
    ```
 
 5. **Install cuDNN**  
@@ -116,6 +116,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    ```bash
    wget https://developer.download.nvidia.com/compute/cudnn/9.5.1/local_installers/cudnn-local-repo-ubuntu2404-9.5.1_1.0-1_amd64.deb
    sudo dpkg -i cudnn-local-repo-ubuntu2404-9.5.1_1.0-1_amd64.deb
+   sudo cp /var/cudnn-local-repo-ubuntu2404-9.5.1/cudnn-*-keyring.gpg /usr/share/keyrings/
    sudo apt update
    sudo apt -y install cudnn
    ```
