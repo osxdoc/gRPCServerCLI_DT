@@ -184,7 +184,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
     build --host_linkopt="-z nostart-stop-gc"
 
     build --define=enable_sm80=true
-    ``
+    ```
 ---
 
 ### Running gRPCServerCLI on Linux
