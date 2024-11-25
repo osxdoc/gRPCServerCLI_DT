@@ -89,7 +89,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    Update your package manager and install the required dependencies:
    ```bash
    sudo apt update
-   sudo apt install -y git libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm
+   sudo apt install -y git libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm python3-llvmlite
    ```
 
 2. **Clone the Repository**  
@@ -101,7 +101,7 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
 
 3. **Install CUDA Toolkit**  
    Install CUDA Toolkit 12.6 (ensure compatibility with your system):
-   "sudo apt install nvidia-cuda-toolkit"
+   (???"sudo apt install nvidia-cuda-toolkit")
 
    ```bash
    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
