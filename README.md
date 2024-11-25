@@ -89,7 +89,8 @@ This guide provides step-by-step instructions to set up and run `gRPCServerCLI` 
    Update your package manager and install the required dependencies:
    ```bash
    sudo apt update
-   sudo apt install -y git libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm 
+   sudo apt install -y git libpng-dev libjpeg-dev libatlas-base-dev libblas-dev libgsl-dev clang libomp-dev llvm
+   sudo ln -s /usr/bin/llvm-config /usr/local/bin/llvm-config 
    ```
 
 2. **Clone the Repository**  
